@@ -58,7 +58,7 @@ GROUP BY warehouses.code
 HAVING COUNT(boxes.code) > 2;
 --9
 INSERT INTO warehouses (code, location, capacity)
-VALUES ('WHNY', 'New York', 3);
+VALUES ('1234', 'New York', 3);
 --10
 INSERT INTO boxes (code, contents, value, warehouse)
 VALUES ('H5RT', 'Papers', 200, 2);
