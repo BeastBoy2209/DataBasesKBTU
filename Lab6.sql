@@ -35,7 +35,8 @@ SELECT e.first_name, e.Last_name, d.department_name, l.city, l.state_province
 FROM employees as e JOIN departments as d on d.department_id = e.department_id
     JOIN locations as l on l.location_id = d.location_id;
 --_-_6_-_--
-SELECT * FROM departments;
+SELECT d.department_name
+FROM departments as d LEFT JOIN employees as e on d.department_id= e.department_id ;
 --_-_7_-_--
 SELECT e.first_name, e.Last_name, e.department_id, d.department_name
 FROM employees as e LEFT JOIN departments as d on e.department_id = d.department_id;
